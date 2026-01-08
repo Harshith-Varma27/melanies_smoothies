@@ -11,7 +11,7 @@ name_on_order = st.text_input('Name On Smoothie')
 st.write("The name on your smoothie will be", name_on_order)
 
 # Get Snowflake session
-cnx=st.connections("Snowflake")
+cnx=st.connection("Snowflake")
 session = cnx.session()
 
 # Load fruit options
